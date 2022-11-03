@@ -15,13 +15,14 @@ public class Employee {
     public Employee() {
     }
 
-    public Employee(Long id, String firstname, String lastname, String email, String password, String roles) {
+    public Employee(Long id, String firstname, String lastname, String email, String password, String roles,Boolean isactif) {
         this.id = id;
         this.firstname = firstname;
         this.lastname = lastname;
         this.email = email;
         this.password = password;
         this.roles = roles;
+        this.isactif=isactif;
     }
 
     public Long getId() {
@@ -75,5 +76,15 @@ public class Employee {
     private String lastname;
     private String email;
     private String password;
+
+    public Boolean getIsactif() {
+        return isactif;
+    }
+
+    public void setIsactif(Boolean isactif) {
+        this.isactif = isactif;
+    }
+
     private String roles;
+    private Boolean isactif;
 }

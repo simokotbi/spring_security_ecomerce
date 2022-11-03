@@ -64,16 +64,26 @@ public class Customer {
         this.roles = roles;
     }
 
-    public Customer(Long id, String firstname, String lastname, String email, String password, String roles) {
+    public Customer(Long id, String firstname, String lastname, String email, String password, String roles,Boolean isactif) {
         this.id = id;
         this.firstname = firstname;
         this.lastname = lastname;
         this.email = email;
         this.password = password;
         this.roles = roles;
+        this.isactif=isactif;
     }
 
     private String email;
     private String password;
     private String roles;
+    private Boolean isactif=true;
+
+    public boolean isIsactif() {
+        return isactif;
+    }
+
+    public void setIsactif(boolean isactif) {
+        this.isactif = isactif;
+    }
 }
