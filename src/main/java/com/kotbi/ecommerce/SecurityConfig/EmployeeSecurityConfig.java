@@ -10,7 +10,7 @@ import org.springframework.security.web.SecurityFilterChain;
 
 @Configuration
 @EnableWebSecurity //By adding @EnableWebSecurity, we get Spring Security and MVC integration support:
-public class SecurityConfig {
+public class EmployeeSecurityConfig {
 
 public SecurityFilterChain filterChain(HttpSecurity http)throws Exception{
     http.csrf()
